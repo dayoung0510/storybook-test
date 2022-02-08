@@ -1,10 +1,11 @@
 import React from 'react';
-import Button from 'components/atoms/Button';
+import Box from '@mui/material/Box';
 
 const ButtonsPage: React.FC = () => {
   return (
     <div>
-      <Button>확인</Button>
+      <Box sx={{ bgcolor: 'primary.light' }}>sdfsdf</Box>
+      <Box sx={{ bgcolor: 'secondary.dark' }}>sdfsdf</Box>
     </div>
   );
 };
