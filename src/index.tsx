@@ -4,19 +4,20 @@ import GlobalStyle from 'styles/globalStyles';
 import 'index.css';
 import App from 'App';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { red, lime } from '@mui/material/colors';
 
 export const theme = createTheme({
   palette: {
     primary: {
-      light: '#4fb3aa',
-      main: '#3c857f',
-      dark: '#195a55',
+      light: lime[200],
+      main: lime[400],
+      dark: lime[600],
       contrastText: '#fff',
     },
     secondary: {
-      light: '#b983c7',
-      main: '#8c5a99',
-      dark: '#6b3479',
+      light: red[100],
+      main: red[300],
+      dark: red[500],
       contrastText: '#fff',
     },
   },

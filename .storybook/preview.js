@@ -1,7 +1,3 @@
-import { addDecorator } from '@storybook/react';
-import { ThemeProvider } from '@mui/material/styles';
-import { theme } from '../src/index';
-
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
@@ -11,5 +7,3 @@ export const parameters = {
     },
   },
 };
-
-addDecorator((story) => <ThemeProvider theme={theme}>{story()}</ThemeProvider>);

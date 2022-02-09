@@ -17,7 +17,7 @@ export default {
 } as Meta;
 
 const Template: Story = (args) => (
-  <Typography {...args}>스토리북 테스트입니다.</Typography>
+  <Typography {...args}>아래 Controls 탭에서 글자를 조정해보세요.</Typography>
 );
 
 export const Texts = Template.bind({});
