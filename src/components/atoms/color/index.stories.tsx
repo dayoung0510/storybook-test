@@ -45,7 +45,7 @@ export const Colors = () => {
         <StyledBox sx={{ background: pink[900] }}>pink[900]</StyledBox>
       </ColorContainer>
 
-      <Title>custom colors</Title>
+      <Title>theme1 colors</Title>
       <ColorContainer>
         <StyledBox sx={{ bgcolor: 'primary.light' }}>primary.light</StyledBox>
         <StyledBox sx={{ bgcolor: 'primary.main' }}>primary.main</StyledBox>

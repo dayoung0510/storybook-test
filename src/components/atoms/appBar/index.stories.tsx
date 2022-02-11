@@ -18,10 +18,11 @@ export default {
 export const AppBar = () => {
   return (
     <>
-      <Bar color={lime[200]} />
-      <Bar color={lime[400]} />
-      <Bar color={red[300]} />
-      <Bar color={red[500]} />
+      <Bar color="primary" />
+      <Bar color="secondary" />
+      <Bar color="default" />
+      <Bar color="inherit" />
+      <Bar />
     </>
   );
 };

@@ -28,7 +28,7 @@ const MyCard: React.FC<Props> = ({ text }) => {
           <CardActionArea>
             <CardMedia
               component="img"
-              height="140"
+              height="200"
               image="https://picsum.photos/400/200?random=1"
               alt="green iguana"
             />

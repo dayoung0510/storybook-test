@@ -22,9 +22,9 @@ export default {
 export const CardsPage = () => {
   return (
     <div>
-      <AppBar />
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid container spacing={2}>
+      <AppBar color="secondary" />
+      <Box sx={{ flexGrow: 1 }} style={{ padding: '1rem 0' }}>
+        <Grid container spacing={{ xs: 2, md: 3, lg: 4 }}>
           <Card />
           <Card />
           <Card />

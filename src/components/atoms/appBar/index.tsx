@@ -1,11 +1,19 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Switch from '@mui/material/Switch';
+
+type ColorProps =
+  | 'inherit'
+  | 'primary'
+  | 'secondary'
+  | 'default'
+  | 'transparent'
+  | undefined;
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
@@ -56,13 +64,16 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-const Bar: React.FC<{ color?: string }> = ({ color }) => {
+const Bar: React.FC<{ color?: ColorProps }> = ({ color }) => {
+  const theme = useTheme();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
         position="static"
-        sx={{ background: color ? color : 'primary.main' }}
+        sx={{ background: color ? color : theme.palette.secondary.light }}
         enableColorOnDark
+        color={color ? color : 'default'}
       >
         <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div>

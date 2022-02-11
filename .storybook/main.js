@@ -5,6 +5,8 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/preset-create-react-app',
     '@storybook/addon-controls',
+    '@react-theming/storybook-addon',
+    'storybook-addon-material-ui',
   ],
   framework: '@storybook/react',
   core: {
